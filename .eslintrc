@@ -14,7 +14,7 @@
         "singleQuote": true,
         "printWidth": 120,
         "jsxSingleQuote": true,
-        "no-console": "warn"
+        "no-unused-vars": "warn"
       }
     ]
   }
