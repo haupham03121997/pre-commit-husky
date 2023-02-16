@@ -16,8 +16,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint . --fix --max-warnings=0",
-    "format": "prettier . --write",
+    "lint": "eslint --ext js,jsx,ts,tsx src/",
+    "lint:fix": "eslint --fix --ext js,jsx,ts,tsx src/",
+    "prettier": "prettier --check \"src/**/(*.jsx|*.js|*.tsx|*ts|*.css|*.scss)\"",
+    "format": "prettier --write \"src/**/(*.jsx|*.js|*.tsx|*ts|*.css|*.scss)\"",
     "prepare": "husky install"
   },
   "eslintConfig": {
