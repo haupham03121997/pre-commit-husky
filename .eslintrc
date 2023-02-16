@@ -3,7 +3,7 @@
   "plugins": ["react", "prettier"],
   "rules": {
     "prettier/prettier": [
-      "warn",
+      "error",
       {
         "arrowParens": "always",
         "semi": false,
