@@ -1,5 +1,6 @@
-import React from 'react';
+import React , {useState} from 'react';
 
 export default function Footer() {
-    return <div>Footer</div>
+    const [counter , setCounter] = useState("");
+  return <div>Footer</div>
 }
