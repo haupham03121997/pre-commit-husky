@@ -27,13 +27,9 @@
     ]
   },
   "lint-staged": {
-    "*.js": "npm run lint"
+    "*.js": "npm run lint",
+    "*.{js,css,md,html,json}": "npm run format"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged && pretty-quick --staged"
-    }
-   },
   "browserslist": {
     "production": [
       ">0.2%",
