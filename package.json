@@ -27,8 +27,14 @@
     ]
   },
   "lint-staged": {
-    "*.js": "eslint --fix",
-    "*.{js,css,md,html,json}": "npm run format"
+    "*.js": [
+      "eslint --fix --quiet",
+      "git add"
+    ],
+    "*.jsx": [
+      "eslint --ext .jsx --fix --quiet",
+      "git add"
+    ]
   },
   "browserslist": {
     "production": [
